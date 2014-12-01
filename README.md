@@ -1,4 +1,4 @@
-#grunt-varJs
+#grunt-insert-varjs
 
 ```
 grunt.initConfig({

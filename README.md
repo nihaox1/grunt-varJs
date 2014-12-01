@@ -29,11 +29,12 @@ grunt.initConfig({
     });
 ```
 
-##options
-#output
+#options
+
+###output
 the js file output file
 
-#vars
+###vars
 the variant you want to insert into js file
 it should be a json
 the value is true means replace to a md5 value

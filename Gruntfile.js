@@ -4,6 +4,7 @@ module.exports = function (grunt) {
         varJs   : {
             fileone   : {
                 output  : "/lib/config.js",
+                keyName : "__varJs",
                 vars    : {
                     version     : true,
                     name        : true,
@@ -12,6 +13,7 @@ module.exports = function (grunt) {
             },
             filetwo   : {
                 output  : "/lib/configOther.js",
+                keyName : "__John",
                 vars    : {
                     ver             : true,
                     fav             : true,

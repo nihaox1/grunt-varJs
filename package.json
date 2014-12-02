@@ -1,7 +1,7 @@
 {
     "name"            : "grunt-insert-varjs",
     "description"     : "declarant variant in js file",
-    "version"         : "0.0.1",
+    "version"         : "0.0.2",
     "homepage"        : "https://github.com/nihaox1/grunt-varJs",
     "author"          : {
         "name"  : "Bo.Cheng"

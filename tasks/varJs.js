@@ -24,6 +24,7 @@ VarJs = function( files , idx ){
         config : function(){
             self.config = {
                 md5         : "egfdjki3iopuioJIOUIOA32132KA92jkl" + idx,
+                keyName     : files.keyName,
                 outputPath  : files.output || "conf/varJsConf.js",
                 vars        : files.vars  || {}
             }
@@ -273,7 +274,7 @@ VarJs.fn = VarJs.prototype = {
         return "{" + _rtn.join( "," ) + "}";
     },
     init : function(){
-        this.createConfFile( "var window.__varJs =" + this.setMap( this.config.vars ) , this.config.outputPath );
+        this.createConfFile( "var window." + this.config.keyName + " =" + this.setMap( this.config.vars ) , this.config.outputPath );
         E( "varJs success!!" );
     }
 }

@@ -265,7 +265,7 @@ VarJs.fn = VarJs.prototype = {
             if( typeof json[ a ] == "object" ){
                 _str += this.setMap( json[ a ] );
             } else if( json[ a ] === true ){
-                _str += this.getRandMd5();
+                _str += "\"" + this.getRandMd5() + "\"";
             } else {
                 _str += json[ a ];
             }
